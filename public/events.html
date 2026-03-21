@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="images/ifavro.png">
+<title>Events - Skill Connect</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+
+<!-- Navbar -->
+
+<nav class="bg-white shadow p-4 flex items-center justify-between">
+
+<!-- Left Logo -->
+<div class="flex items-center gap-2">
+<img src="images/logo.png" alt="Skill Connect Logo" class="h-10">
+<h1 class="font-bold text-lg">Skill Connect</h1>
+</div>
+
+
+<!-- Middle Navigation -->
+<div class="flex gap-8 font-medium">
+
+<a href="index.html"
+class="px-3 py-2 rounded-lg hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition duration-200 inline-block">
+🏠 Home
+</a>
+
+<a href="events.html"
+class="px-3 py-2 rounded-lg hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition duration-200 inline-block">
+📅 Events
+</a>
+
+<a href="submit.html"
+class="px-3 py-2 rounded-lg hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition duration-200 inline-block">
+➕ Submit Event
+</a>
+
+<a href="participation.html"
+class="px-3 py-2 rounded-lg hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition duration-200 inline-block">
+📊 My Participations
+</a>
+
+<a href="profile.html"
+class="px-3 py-2 rounded-lg hover:bg-purple-100 hover:text-purple-700 hover:scale-110 transition duration-200 inline-block">
+👤 Profile
+</a>
+
+</div>
+
+
+<!-- Right Login -->
+<div>
+
+<a href="login.html"
+class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 hover:scale-105 transition duration-200 inline-block">
+Login / Register
+</a>
+
+</div>
+
+</nav>
+
+
+
+
+
+<!-- Page Header -->
+
+<section class="bg-gradient-to-r from-purple-600 to-purple-400 text-white text-center py-16">
+
+<h1 class="text-3xl font-bold mb-2">
+Explore Events
+</h1>
+
+<p>
+Discover hackathons, workshops, and technical events
+</p>
+
+</section>
+
+
+
+<!-- Search Bar -->
+
+<div class="max-w-5xl mx-auto mt-10 bg-white p-6 rounded-xl shadow">
+
+<input
+type="text"
+placeholder="⌕   Search events..."
+class="border p-3 w-full rounded"
+/>
+
+</div>
+
+
+
+<!-- Filter Buttons -->
+
+<div class="max-w-5xl mx-auto mt-6 flex gap-4">
+
+<button onclick="filterEvents('all')" class="bg-purple-600 text-white px-4 py-2 rounded">
+All
+</button>
+
+<button onclick="filterEvents('hackathon')" class="bg-gray-200 px-4 py-2 rounded">
+Hackathon
+</button>
+
+<button onclick="filterEvents('workshop')" class="bg-gray-200 px-4 py-2 rounded">
+Workshop
+</button>
+
+<button onclick="filterEvents('conference')" class="bg-gray-200 px-4 py-2 rounded">
+Conference
+</button>
+
+</div>
+
+
+
+<!-- Events Grid -->
+
+<div class="max-w-6xl mx-auto grid grid-cols-3 gap-6 mt-10">
+
+
+<!-- Event 1 -->
+
+<div class="event bg-white rounded-xl shadow p-5 hover:shadow-xl hover:scale-105 transition duration-300"
+data-type="hackathon">
+<img src="images/hack.jpg"
+class="rounded-lg mb-3 h-40 w-full object-cover">
+
+<h3 class="font-bold text-lg mb-2">
+Smart India Hackathon 2026
+</h3>
+
+<p class="text-gray-500">
+Ministry of Education
+</p>
+
+<p class="text-sm mt-2">
+📅 Apr 10 - Apr 12
+</p>
+
+<p class="text-sm">
+📍 Multiple Cities, India
+</p>
+
+<button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">
+View Details
+</button>
+
+</div>
+
+
+
+<!-- Event 2 -->
+
+<div class="event bg-white rounded-xl shadow p-5 hover:shadow-xl hover:scale-105 transition duration-300"
+data-type="hackathon">
+<img src="images/oot.jpeg"
+class="rounded-lg mb-3 h-40 w-full object-cover">
+<h3 class="font-bold text-lg mb-2">
+Web Development Bootcamp
+</h3>
+
+<p class="text-gray-500">
+Microsoft Learn
+</p>
+
+<p class="text-sm mt-2">
+📅 Mar 20 - Mar 22
+</p>
+
+<p class="text-sm">
+🌐 Online
+</p>
+
+<button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">
+View Details
+</button>
+
+</div>
+
+
+
+<!-- Event 3 -->
+
+<div class="event bg-white rounded-xl shadow p-5 hover:shadow-xl hover:scale-105 transition duration-300"
+data-type="conference">
+
+<img src="images/cofere.jpg"
+class="rounded-lg mb-3 h-40 w-full object-cover">
+<h3 class="font-bold text-lg mb-2">
+Data Science Conference 2026
+</h3>
+
+<p class="text-gray-500">
+Data Science Society
+</p>
+
+<p class="text-sm mt-2">
+📅 Apr 20 - Apr 22
+</p>
+
+<p class="text-sm">
+📍 Mumbai
+</p>
+
+<button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">
+View Details
+</button>
+
+</div>
+
+
+
+<!-- Event 4 -->
+
+<div class="event bg-white rounded-xl shadow p-5 hover:shadow-xl hover:scale-105 transition duration-300"
+data-type="workshop">
+
+<img src="images/work.jpg"
+class="rounded-lg mb-3 h-40 w-full object-cover">
+
+<h3 class="font-bold text-lg mb-2">
+AI & Machine Learning Workshop
+</h3>
+
+<p class="text-gray-500">
+Google Developers
+</p>
+
+<p class="text-sm mt-2">
+📅 May 5 - May 7
+</p>
+
+<p class="text-sm">
+🌐 Online
+</p>
+
+<button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">
+View Details
+</button>
+
+</div>
+
+
+
+<!-- Event 5 -->
+
+<div class="event bg-white rounded-xl shadow p-5 hover:shadow-xl hover:scale-105 transition duration-300"
+data-type="hackathon">
+
+<img src="images/oot.jpeg"
+class="rounded-lg mb-3 h-40 w-full object-cover">
+<h3 class="font-bold text-lg mb-2">
+Cyber Security Bootcamp
+</h3>
+
+<p class="text-gray-500">
+Cisco Networking Academy
+</p>
+
+<p class="text-sm mt-2">
+📅 Jun 10 - Jun 12
+</p>
+
+<p class="text-sm">
+📍 Bangalore
+</p>
+
+<button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">
+View Details
+</button>
+
+</div>
+
+
+
+<!-- Event 6 -->
+
+<div class="event bg-white rounded-xl shadow p-5 hover:shadow-xl hover:scale-105 transition duration-300"
+data-type="hackathon">
+
+<img src="images/hack.jpg"
+class="rounded-lg mb-3 h-40 w-full object-cover">
+<h3 class="font-bold text-lg mb-2">
+Startup Innovation Hackathon
+</h3>
+
+<p class="text-gray-500">
+Tech Community
+</p>
+
+<p class="text-sm mt-2">
+📅 Aug 15 - Aug 17
+</p>
+
+<p class="text-sm">
+🌐 Online
+</p>
+
+<button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">
+View Details
+</button>
+
+</div>
+
+
+</div>
+
+
+
+<!-- Footer -->
+
+<footer class="text-center p-6 text-gray-500 mt-10">
+
+<p>Skill Connect Platform</p>
+
+<p>Helping students discover technical opportunities</p>
+
+</footer>
+
+
+
+<!-- Filter Script -->
+
+<script>
+
+function filterEvents(type){
+
+let events = document.querySelectorAll(".event")
+
+events.forEach(event => {
+
+if(type === "all"){
+event.style.display = "block"
+}
+
+else if(event.dataset.type === type){
+event.style.display = "block"
+}
+
+else{
+event.style.display = "none"
+}
+
+})
+
+}
+
+</script>
+
+
+</body>
+
+</html>
