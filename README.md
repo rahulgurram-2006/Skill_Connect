@@ -43,6 +43,57 @@ Students can browse available events, search for relevant opportunities, view ev
 
 ### Database
 - MySQL
+- 
+🎯 Objectives
+The main objectives of Skill Connect are:
+To provide a centralized platform for technical events.
+To reduce the time students spend searching for opportunities.
+To help students discover events relevant to their interests.
+To make event information easier to access.
+To reduce the chances of missing registration deadlines.
+To encourage students to participate in technical and learning activities.
+
+🌟 Benefits For Students
+Easy access to multiple technical opportunities
+Saves time spent searching across different platforms
+Helps students discover new learning opportunities
+Makes registration information easier to find
+Encourages participation in hackathons and workshops
+For Event Organizers
+Provides a platform to reach students
+Makes event information easier to discover
+Helps increase visibility of technical events
+
+🔮 Future Enhancements
+Some possible future improvements include:
+AI-based event recommendations
+Personalized student dashboards
+Email and notification reminders
+Advanced event filtering
+Mobile application
+Integration with external event platforms
+Event recommendation based on student skills and interests
+Organizer dashboard for creating and managing events
+
+👥 Target Users
+College students
+Developers
+Coding enthusiasts
+Hackathon participants
+Event organizers
+Students looking for internships and workshops
+
+📚 Use Cases
+Skill Connect can be used to discover:
+Hackathons
+Coding competitions
+Workshops
+Technical seminars
+Webinars
+Conferences
+Internships
+Training programs
+Other technical learning opportunities
 
 ## 🏗️ Project Architecture
 
@@ -60,53 +111,3 @@ Skill Connect
 │
 └── Database
     └── MySQL
-🎯 Objectives
-
-The main objectives of Skill Connect are:
-
-To provide a centralized platform for technical events.
-To reduce the time students spend searching for opportunities.
-To help students discover events relevant to their interests.
-To make event information easier to access.
-To reduce the chances of missing registration deadlines.
-To encourage students to participate in technical and learning activities.
-🌟 Benefits For Students
-Easy access to multiple technical opportunities
-Saves time spent searching across different platforms
-Helps students discover new learning opportunities
-Makes registration information easier to find
-Encourages participation in hackathons and workshops
-For Event Organizers
-Provides a platform to reach students
-Makes event information easier to discover
-Helps increase visibility of technical events
-🔮 Future Enhancements
-
-Some possible future improvements include:
-
-AI-based event recommendations
-Personalized student dashboards
-Email and notification reminders
-Advanced event filtering
-Mobile application
-Integration with external event platforms
-Event recommendation based on student skills and interests
-Organizer dashboard for creating and managing events
-👥 Target Users
-College students
-Developers
-Coding enthusiasts
-Hackathon participants
-Event organizers
-Students looking for internships and workshops
-📚 Use Cases
-Skill Connect can be used to discover:
-Hackathons
-Coding competitions
-Workshops
-Technical seminars
-Webinars
-Conferences
-Internships
-Training programs
-Other technical learning opportunities
